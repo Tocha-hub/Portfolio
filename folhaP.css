@@ -1,0 +1,89 @@
+:root {
+    --verde: #459949;
+    --smoke: #ebebeb;
+    --gry: #d1d1d1;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--smoke);
+    color: black;
+}
+
+.box_capa {
+    background-color: var(--verde);
+    color: var(--vpp);
+    display: flex;
+    flex-direction: row;
+    padding: 10px 40px;
+    justify-content: space-between;
+    box-shadow: 100pt solid black;
+    align-items: center;
+}
+
+#foto {
+    height: 310pt;
+    border-radius: 20px;
+}
+
+#intro1 {
+    width: 60%;
+    padding: 50pt 70pt;
+    margin: 20pt;
+}
+
+#intro2 {
+    padding: 10pt 70pt 10pt 10pt;
+}
+
+.menu {
+    padding: 20px 20px;
+    align-items: center;
+    text-align: center;
+    background-color: lightslategray;
+    color: whitesmoke;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: row;
+    padding: 10pt 150pt;
+    margin: 20pt;
+    justify-content: space-between;
+    gap: 50pt;
+}
+
+h2 {
+    font-size: 30pt;
+}
+
+p {
+    font-size: 13pt;
+}
+
+li {
+    font-size: 13pt;
+}
+
+#boxc {
+    background-color: lightslategrey;
+    color: whitesmoke;
+}
+
+#boxc2 {
+    display: flex;
+    flex-direction: row;
+    padding: 10pt 150pt;
+    justify-content: space-between;
+}
+
+#proj {
+    background-color: var(--gry);
+    border-radius: 10pt;
+    padding: 30pt;
+}
