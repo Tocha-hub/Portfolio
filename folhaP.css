@@ -23,7 +23,7 @@ body {
     flex-direction: row;
     padding: 10px 40px;
     justify-content: space-between;
-    box-shadow: 0px 10px 20px grey;
+    box-shadow: 0px 0px 20px grey;
     align-items: center;
 }
 
@@ -93,14 +93,44 @@ li {
     text-align: center;
 }
 
-#projeto {
+#projetos {
     display: grid;
-    grid-column: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .projblock {
     margin: 10pt;
-    background-color: black;
-    height: 20pt;
-    width: 20pt;
+    height: 400pt;
+    width: 297pt;
+    position: relative;
+}
+
+.overlay{
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: .5s ease;
+    background-color: var(--men);
+    height: 100%;
+    width: 100%;
+}
+
+.center {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.projblock:hover .overlay { opacity: 1; }
+
+
+.capa{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
