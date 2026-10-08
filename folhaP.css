@@ -114,8 +114,17 @@ li {
     position: absolute;
     transition: .5s ease;
     background-color: var(--men);
+    color: var(--smoke);
     height: 100%;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "texto texto"
+    "link link";
+    padding: 15pt;
 }
 
 .center {
