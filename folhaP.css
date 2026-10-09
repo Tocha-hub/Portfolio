@@ -63,8 +63,9 @@ body {
 
 
 .box2 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "bios lista";
     padding: 10pt 150pt;
     margin: 20pt;
     justify-content: space-between;
