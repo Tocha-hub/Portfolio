@@ -4,36 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="folhaP.css">
 </head>
 
 <body>
 
-    <header> <!--Introdução-->
+    <header id="intro"> <!--Introdução-->
         <div class="menu">
             <nav>
                 <h3>Menu</h3>
             </nav>
         </div>
-        <div class="box_capa">
-            <div id="intro1">
+        <div class="box_capa center">
+            <div id="intro1" class="center">
                 <h1 style="font-size: 35pt;">Eu sou Afonso Moraes Mischiatti</h1> <br>
                 <p style="font-size: 15pt;">Sou atualmente estudante do ensino médio intergal e faço um curso técnico de
                     informática. <br>
                     Meu desejo é trabalhar na área de cibersegurança, como pentester especificamente, mas gosto de forma
                     geral das áreas da tecnologia, video games e eletrônica.</p>
             </div>
-            <div id="intro2">
-                <img src="foto.png" alt="minha foto" id="foto">
-            </div>
+            <img src="foto.png" alt="minha foto" id="foto">
         </div>
 
     </header>
 
-    <section> <!--Biografia-->
-        <div class="box2">
-            <div style="width: 500pt;">
+    <section class="box2 center"> <!--Biografia-->
+            <div style="grid-area: bios;">
                 <h2>Sobre mim...</h2> <br>
                 <p> Tenho 17 anos, sempre tive dúvidas quanto carreiras e trabalhos. Meu pai trabalha em uma empresa de
                 tecnologia, provedora de internet, mas nunca me aprofundei nisso,
@@ -42,7 +39,7 @@
                 <p> Assim, acabei desenvolvendo interesse genuino pelas capacidades de invasão hacker, não que eu queira
                 usar por razões maliciosas, é claro.</p>
             </div>
-            <div>
+            <div style="grid-area: lista; padding-left: 20px;">
                 <h2>O que estou (ou me interesso) em estudar:</h2> <br>
                 <ul>
                     <li>Phyton</li>
@@ -53,27 +50,28 @@
                     <li>C#</li>
                 </ul>
             </div>
-        </div>
     </section>
 
-    <section style="margin: 10pt 20pt"> <!--Projetos-->
-        <div id="titleproj">
+    <section id="projeto"> <!--Projetos-->
             <h2>Meus projetos:</h2>
             <p>Por enquanto não tenho tantas coisas, mas por enquanto é só o começo</p>
-            <div id="projetos" class="center">
-                <div class="projblock"> <img src="capa_TQ.png" alt="Capa da Team Square" class="capa"> <div class="overlay"> <h1 style="grid-area: titulo;" class="center">Team-Square</h1> <p style="grid-area: texto;" class="center">Esse é um site criado por mim, tembém funciona como um portifólio, da Team Square, equipe criado por mim e uns amigos que atua em várias áreas.</p> </div></div>
+            <div id="projetos2" class="center">
+                <div class="projblock"> <img src="capa_TQ.png" alt="Capa da Team Square" class="capa">
+                    <div class="overlay center">
+                        <h1 style="grid-area: titulo;" class="center">Team-Square</h1>
+                        <p style="grid-area: texto;" class="center">Esse é um site criado por mim, tembém funciona como um portifólio, da Team Square, equipe criado por mim e uns amigos que atua em várias áreas.</p> <br>
+                        <a href="https://github.com/Tocha-hub/Team-Square.git" class="center"><img src="github.png" alt="github" class="projfoto"></a>
+                    </div>
+                </div>
                 <div class="projblock"><div></div></div>
                 <div class="projblock"><div></div></div>
             </div>
-        </div>
+        
     </section>
-    <br><br><br>
 
-    <section id="boxcont"> <!--Contato-->
-        <div id="boxcont2">
-        <p>Caso tenha dúvidas contate o meu <a href="mailto:afonsomischiatti@gmail.com" style="color: azure;">Gmail</a></p>
-        <p>© 2026 Afonso M.M. - Portifólio pessoal</p>
-        </div>
+    <section id="boxcont" class="center"> <!--Contato-->
+        <p style="grid-area: gmail;">Caso tenha dúvidas contate o meu <a href="mailto:afonsomischiatti@gmail.com" style="color: azure;">Gmail</a></p>
+        <p style="grid-area: direitos;">© 2026 Afonso M.M. - Portifólio pessoal</p>
     </section>
 
 </body>
